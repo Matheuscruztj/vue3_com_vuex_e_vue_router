@@ -7,9 +7,10 @@
 </template>
 
 <script>
-
   export default {
-
+    created() {
+      this.$store.dispatch('loadProducts');
+    }
   }
   
 </script>
